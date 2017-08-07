@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.lamng.material_animations.features.FirstSharedElementFragment">
+
+    <ImageView
+        android:id="@+id/ivCircle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:transitionName="@string/transition_name_icon_shared"
+        android:src="@drawable/circle" />
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Fragment" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_normal"
+        android:text="Blue circle is a shared element between MainActivity and this fragment." />
+
+    <Button
+        android:id="@+id/btNextWithoutOverlap"
+        style="@style/MaterialAnimations.Button"
+        android:text="Next (Overlap transition = false)" />
+
+    <Button
+        android:id="@+id/btNextWithOverlap"
+        style="@style/MaterialAnimations.Button"
+        android:text="Next (Overlap transition =  true)" />
+
+</LinearLayout>

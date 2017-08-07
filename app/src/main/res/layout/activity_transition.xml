@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lamng.material_animations.features.TransitionActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_basic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="This activity defines more Animations Enter Transition programmatically." />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Transitions can be defined either on code or on xml resource files" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btExplodeCode"
+            style="@style/MaterialAnimations.Button"
+            android:layout_weight="1"
+            android:text="Explode (CODE)" />
+
+        <Button
+            android:id="@+id/btExplodeXML"
+            style="@style/MaterialAnimations.Button"
+            android:layout_weight="1"
+            android:text="Explode (XML)" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btSlideCode"
+            style="@style/MaterialAnimations.Button"
+            android:layout_weight="1"
+            android:text="Slide (CODE)" />
+
+        <Button
+            android:id="@+id/btSlideXML"
+            style="@style/MaterialAnimations.Button"
+            android:layout_weight="1"
+            android:text="Slide (XML)" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btExit"
+        style="@style/MaterialAnimations.Button"
+        android:text="Exit" />
+
+    <Button
+        android:id="@+id/btExitTransition"
+        style="@style/MaterialAnimations.Button"
+        android:text="Exit (overriding return transition)" />
+
+</LinearLayout>

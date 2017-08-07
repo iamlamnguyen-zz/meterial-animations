@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lamng.material_animations.features.SecondSharedElementFragment">
+
+    <ImageView
+        android:id="@+id/ivCircle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/spacing_normal"
+        android:src="@drawable/circle"
+        android:transitionName="Circle Shared Element" />
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/ivCircle"
+        android:layout_alignTop="@+id/ivCircle"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_margin="@dimen/spacing_normal"
+        android:layout_toEndOf="@+id/ivCircle"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Second Fragment" />
+
+    <TextView
+        android:id="@+id/tvBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivCircle"
+        android:layout_margin="@dimen/spacing_normal"
+        android:text="Blue circle is a shared element between two fragments" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBody"
+        android:layout_margin="@dimen/spacing_normal"
+        android:text="Overlap"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/spacing_normal"
+        android:text="When true, the enter transition will start as soon as possible. When false, the enter transition will wait until the exit transition completes before starting." />
+
+
+</RelativeLayout>
